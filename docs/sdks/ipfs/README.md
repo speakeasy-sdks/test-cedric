@@ -1,5 +1,5 @@
 # Ipfs
-(*ipfs*)
+(*.ipfs*)
 
 ## Overview
 
@@ -63,7 +63,7 @@ Return all files pinned on IPFS
 
 ```typescript
 import { Test } from "test";
-import { GetAllPinStatus } from "test/dist/sdk/models/operations";
+import { Status } from "test/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new Test({
@@ -265,8 +265,8 @@ import { Test } from "test";
 
   const res = await sdk.ipfs.uploadFile({
     file: {
-      content: "U?WWKB{5@q" as bytes <<<>>>,
-      file: "string",
+      content: new TextEncoder().encode("0xc7cca7F47D"),
+      fileName: "through_ew.mp4v",
     },
     metadata: {},
   });
@@ -308,8 +308,8 @@ import { Test } from "test";
   const res = await sdk.ipfs.uploadFolder({
     files: [
       {
-        content: "$FpFd]o4kP" as bytes <<<>>>,
-        files: "string",
+        content: new TextEncoder().encode("0x08C8AeC4Bb"),
+        fileName: "flit.html",
       },
     ],
     metadata: {},

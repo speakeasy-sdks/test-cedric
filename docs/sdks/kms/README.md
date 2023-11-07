@@ -1,5 +1,5 @@
 # Kms
-(*kms*)
+(*.kms*)
 
 ## Overview
 
@@ -21,7 +21,7 @@ Create a kms.
 
 ```typescript
 import { Test } from "test";
-import { CreateKmsDtoProvider } from "test/dist/sdk/models/shared";
+import { Provider } from "test/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new Test({
@@ -36,7 +36,7 @@ import { CreateKmsDtoProvider } from "test/dist/sdk/models/shared";
     },
     metadata: {},
     name: "string",
-    provider: CreateKmsDtoProvider.Aws,
+    provider: Provider.Aws,
     secret: "string",
   });
 

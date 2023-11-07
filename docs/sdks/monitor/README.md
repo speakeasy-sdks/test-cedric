@@ -1,5 +1,5 @@
 # Monitor
-(*monitor*)
+(*.monitor*)
 
 ## Overview
 
@@ -109,7 +109,7 @@ Return all the watcher created on starton.
 
 ```typescript
 import { Test } from "test";
-import { GetAllWatcherType } from "test/dist/sdk/models/operations";
+import { TypeT } from "test/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new Test({

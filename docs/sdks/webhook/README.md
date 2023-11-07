@@ -1,5 +1,5 @@
 # Webhook
-(*webhook*)
+(*.webhook*)
 
 ## Overview
 
@@ -60,7 +60,7 @@ Return the list of all webhook sent to your server
 
 ```typescript
 import { Test } from "test";
-import { GetAllWebhookStatus } from "test/dist/sdk/models/operations";
+import { QueryParamStatus } from "test/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new Test({

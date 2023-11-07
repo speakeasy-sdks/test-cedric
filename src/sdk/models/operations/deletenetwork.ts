@@ -11,6 +11,9 @@ export class DeleteNetworkRequest extends SpeakeasyBase {
 }
 
 export class DeleteNetworkResponse extends SpeakeasyBase {
+    @SpeakeasyMetadata()
+    twoHundredApplicationJsonNumber?: number;
+
     /**
      * HTTP response content type for this operation
      */
@@ -28,7 +31,4 @@ export class DeleteNetworkResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
-
-    @SpeakeasyMetadata()
-    deleteNetwork200ApplicationJSONNumber?: number;
 }

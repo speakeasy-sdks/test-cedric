@@ -11,6 +11,9 @@ export class DeleteKmsRequest extends SpeakeasyBase {
 }
 
 export class DeleteKmsResponse extends SpeakeasyBase {
+    @SpeakeasyMetadata()
+    twoHundredApplicationJsonNumber?: number;
+
     /**
      * HTTP response content type for this operation
      */
@@ -28,7 +31,4 @@ export class DeleteKmsResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
-
-    @SpeakeasyMetadata()
-    deleteKms200ApplicationJSONNumber?: number;
 }

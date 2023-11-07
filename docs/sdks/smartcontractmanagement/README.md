@@ -1,5 +1,5 @@
 # SmartContractManagement
-(*smartContractManagement*)
+(*.smartContractManagement*)
 
 ## Overview
 
@@ -29,7 +29,7 @@ Call a specific function from a smart contract
 
 ```typescript
 import { Test } from "test";
-import { CallDtoSpeed } from "test/dist/sdk/models/shared";
+import { Speed } from "test/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new Test({
@@ -119,7 +119,7 @@ Deploy from bytecode allow you to deploy your own solidity code.
 
 ```typescript
 import { Test } from "test";
-import { AbiObjectDtoStateMutability, AbiObjectDtoType, DeployFromBytecodeDtoSpeed } from "test/dist/sdk/models/shared";
+import { DeployFromBytecodeDtoSpeed, StateMutability, TypeT } from "test/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new Test({
@@ -140,7 +140,7 @@ import { AbiObjectDtoStateMutability, AbiObjectDtoType, DeployFromBytecodeDtoSpe
             name: "string",
             type: "string",
           },
-          type: AbiObjectDtoType.Event,
+          type: TypeT.Event,
         },
       ],
       bytecode: "string",
@@ -354,7 +354,7 @@ Import a contract already deployed
 
 ```typescript
 import { Test } from "test";
-import { AbiObjectDtoStateMutability, AbiObjectDtoType } from "test/dist/sdk/models/shared";
+import { StateMutability, TypeT } from "test/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new Test({
@@ -374,7 +374,7 @@ import { AbiObjectDtoStateMutability, AbiObjectDtoType } from "test/dist/sdk/mod
           name: "string",
           type: "string",
         },
-        type: AbiObjectDtoType.Function,
+        type: TypeT.Function,
       },
     ],
     address: "0x1C1f7A4d7F853856b964947CA03B92993D3ef40e",
