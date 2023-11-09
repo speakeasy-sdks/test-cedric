@@ -57,13 +57,13 @@ import { Test } from "test";
 ## Available Resources and Operations
 
 
-### [.data](docs/sdks/data/README.md)
+### [data](docs/sdks/data/README.md)
 
 * [getBalance](docs/sdks/data/README.md#getbalance) - Get native balance
 * [getErc20Balance](docs/sdks/data/README.md#geterc20balance) - Get erc20 balance
 * [getGasPrice](docs/sdks/data/README.md#getgasprice) - Get gas price
 
-### [.wallet](docs/sdks/wallet/README.md)
+### [wallet](docs/sdks/wallet/README.md)
 
 * [create](docs/sdks/wallet/README.md#create) - Create a wallet
 * [delete](docs/sdks/wallet/README.md#delete) - Delete a wallet
@@ -75,7 +75,7 @@ import { Test } from "test";
 * [sign](docs/sdks/wallet/README.md#sign) - Sign a message
 * [update](docs/sdks/wallet/README.md#update) - Update a wallet
 
-### [.ipfs](docs/sdks/ipfs/README.md)
+### [ipfs](docs/sdks/ipfs/README.md)
 
 * [delete](docs/sdks/ipfs/README.md#delete) - Delete a pin
 * [getAll](docs/sdks/ipfs/README.md#getall) - Get all files
@@ -87,7 +87,7 @@ import { Test } from "test";
 * [uploadFolder](docs/sdks/ipfs/README.md#uploadfolder) - Upload a folder
 * [uploadJson](docs/sdks/ipfs/README.md#uploadjson) - Upload a json
 
-### [.kms](docs/sdks/kms/README.md)
+### [kms](docs/sdks/kms/README.md)
 
 * [create](docs/sdks/kms/README.md#create) - Create a kms
 * [delete](docs/sdks/kms/README.md#delete) - Delete a kms
@@ -95,7 +95,7 @@ import { Test } from "test";
 * [getOne](docs/sdks/kms/README.md#getone) - Get a kms
 * [update](docs/sdks/kms/README.md#update) - Update a kms
 
-### [.transactionManager](docs/sdks/transactionmanager/README.md)
+### [transactionManager](docs/sdks/transactionmanager/README.md)
 
 * [create](docs/sdks/transactionmanager/README.md#create) - Create a transaction
 * [getAll](docs/sdks/transactionmanager/README.md#getall) - Get all transactions
@@ -103,12 +103,12 @@ import { Test } from "test";
 * [getOne](docs/sdks/transactionmanager/README.md#getone) - Get a transaction
 * [resyncNonce](docs/sdks/transactionmanager/README.md#resyncnonce) - Resync nonce for a wallet
 
-### [.transactionManager.setting](docs/sdks/setting/README.md)
+### [transactionManager.setting](docs/sdks/setting/README.md)
 
 * [get](docs/sdks/setting/README.md#get) - Get settings
 * [update](docs/sdks/setting/README.md#update) - Update settings
 
-### [.network](docs/sdks/network/README.md)
+### [network](docs/sdks/network/README.md)
 
 * [create](docs/sdks/network/README.md#create) - Create a network (enterprise)
 * [delete](docs/sdks/network/README.md#delete) - Delete a network (enterprise)
@@ -116,7 +116,7 @@ import { Test } from "test";
 * [getOne](docs/sdks/network/README.md#getone) - Get a network
 * [update](docs/sdks/network/README.md#update) - Update a network (enterprise)
 
-### [.network.rpc](docs/sdks/rpc/README.md)
+### [network.rpc](docs/sdks/rpc/README.md)
 
 * [create](docs/sdks/rpc/README.md#create) - Add a rpc (enterprise)
 * [delete](docs/sdks/rpc/README.md#delete) - Delete a rpc (enterprise)
@@ -125,18 +125,18 @@ import { Test } from "test";
 * [update](docs/sdks/rpc/README.md#update) - Update a rpc (enterprise)
 
 
-### [.project.member](docs/sdks/member/README.md)
+### [project.member](docs/sdks/member/README.md)
 
 * [delete](docs/sdks/member/README.md#delete) - Delete a member
 * [getAll](docs/sdks/member/README.md#getall) - Get all members
 
-### [.project.member.invitation](docs/sdks/invitation/README.md)
+### [project.member.invitation](docs/sdks/invitation/README.md)
 
 * [create](docs/sdks/invitation/README.md#create) - Invite a member
 * [delete](docs/sdks/invitation/README.md#delete) - Delete an invitation
 * [getAll](docs/sdks/invitation/README.md#getall) - Get all member invitation
 
-### [.smartContractManagement](docs/sdks/smartcontractmanagement/README.md)
+### [smartContractManagement](docs/sdks/smartcontractmanagement/README.md)
 
 * [call](docs/sdks/smartcontractmanagement/README.md#call) - Call smart contract
 * [delete](docs/sdks/smartcontractmanagement/README.md#delete) - Delete a smart contract
@@ -150,12 +150,12 @@ import { Test } from "test";
 * [update](docs/sdks/smartcontractmanagement/README.md#update) - Update a smart contract
 
 
-### [.smartContract.template](docs/sdks/template/README.md)
+### [smartContract.template](docs/sdks/template/README.md)
 
 * [getAll](docs/sdks/template/README.md#getall) - Get all templates
 * [getOne](docs/sdks/template/README.md#getone) - Get a template
 
-### [.monitor](docs/sdks/monitor/README.md)
+### [monitor](docs/sdks/monitor/README.md)
 
 * [create](docs/sdks/monitor/README.md#create) - Create a watcher
 * [delete](docs/sdks/monitor/README.md#delete) - Delete a watcher
@@ -165,7 +165,7 @@ import { Test } from "test";
 * [getOneEvent](docs/sdks/monitor/README.md#getoneevent) - Get a watcher event
 * [update](docs/sdks/monitor/README.md#update) - Update a watcher
 
-### [.webhook](docs/sdks/webhook/README.md)
+### [webhook](docs/sdks/webhook/README.md)
 
 * [cancel](docs/sdks/webhook/README.md#cancel) - Cancel a webhook
 * [getAll](docs/sdks/webhook/README.md#getall) - Get all webhooks
@@ -216,7 +216,37 @@ import { Test } from "test";
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
+
+
+## Example
+
+```typescript
+import { Test } from "test";
+
+(async () => {
+    const sdk = new Test({
+        startonApiKey: "",
+    });
+
+    let res;
+    try {
+        res = await sdk.data.getBalance({
+            address: "164 Runolfsson Via",
+            network: "string",
+        });
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 <!-- Start Server Selection -->
@@ -304,12 +334,11 @@ const sdk = new Test({defaultClient: httpClient});
 
 
 <!-- Start Authentication -->
-
 # Authentication
 
 ## Per-Client Security Schemes
 
-Your SDK supports the following security scheme globally:
+This SDK supports the following security scheme globally:
 
 | Name            | Type            | Scheme          |
 | --------------- | --------------- | --------------- |
