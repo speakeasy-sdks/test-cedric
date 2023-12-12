@@ -26,9 +26,9 @@ Create a wallet.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.create({
@@ -39,7 +39,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -68,9 +70,9 @@ Delete a wallet.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.delete({
@@ -80,7 +82,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -109,9 +113,9 @@ Return all wallet
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.getAll({});
@@ -123,7 +127,9 @@ import { Test } from "test";
       res = res.next();
     } while (res);
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -152,9 +158,9 @@ Return a wallet.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.getOne({
@@ -164,7 +170,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -194,9 +202,9 @@ Import a wallet.
 import { Test } from "test";
 import { ImportProviderKeyDtoProvider } from "test/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.import({
@@ -207,7 +215,9 @@ import { ImportProviderKeyDtoProvider } from "test/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -236,9 +246,9 @@ Request faucet. You can do it one time per day.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.requestFaucet({
@@ -252,7 +262,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -281,9 +293,9 @@ Resync nonce for a wallet
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.resyncNonce({
@@ -294,7 +306,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -323,9 +337,9 @@ Sign a message.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.sign({
@@ -338,7 +352,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -367,9 +383,9 @@ Update a wallet.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.wallet.update({
@@ -382,7 +398,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

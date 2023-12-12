@@ -23,9 +23,9 @@ Cancel a specific webhook
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.webhook.cancel({
@@ -35,7 +35,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -65,9 +67,9 @@ Return the list of all webhook sent to your server
 import { Test } from "test";
 import { QueryParamStatus } from "test/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.webhook.getAll({});
@@ -79,7 +81,9 @@ import { QueryParamStatus } from "test/dist/sdk/models/operations";
       res = res.next();
     } while (res);
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -108,9 +112,9 @@ RReturn a specific webhook sent by starton.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.webhook.getOne({
@@ -120,7 +124,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -149,9 +155,9 @@ Get your signing secret. It allow you to verify the payload sent by starton api 
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.webhook.getSigningSecret();
@@ -159,7 +165,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -187,9 +195,9 @@ Delete your old signing secret and create a new one. All new payload will be sig
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.webhook.regenerateSigningSecret();
@@ -197,7 +205,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -225,9 +235,9 @@ Resend a specific webhook to your server. Useful if you mist an event or for tes
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.webhook.resend({
@@ -237,7 +247,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

@@ -18,9 +18,9 @@ Add a rpc for a specific network
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.network.rpc.create({
@@ -33,7 +33,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -62,9 +64,9 @@ Delete a rpc for a specific network
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.network.rpc.delete({
@@ -75,7 +77,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -104,9 +108,9 @@ Return all rpc for a specific network
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.network.rpc.getAll({
@@ -120,7 +124,9 @@ import { Test } from "test";
       res = res.next();
     } while (res);
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -149,9 +155,9 @@ Return a specific rpc for a specific network
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.network.rpc.getOne({
@@ -162,7 +168,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -191,9 +199,9 @@ Update a specific rpc for a specific network
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.network.rpc.update({
@@ -205,7 +213,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

@@ -16,9 +16,9 @@ Return all templates created by starton
 import { Test } from "test";
 import { Category } from "test/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContract.template.getAll({});
@@ -30,7 +30,9 @@ import { Category } from "test/dist/sdk/models/operations";
       res = res.next();
     } while (res);
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -59,9 +61,9 @@ Return a template.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContract.template.getOne({
@@ -71,7 +73,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

@@ -31,9 +31,9 @@ Call a specific function from a smart contract
 import { Test } from "test";
 import { Speed } from "test/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.call({
@@ -55,7 +55,9 @@ import { Speed } from "test/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -84,9 +86,9 @@ Delete a smart contract.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.delete({
@@ -97,7 +99,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -127,9 +131,9 @@ Deploy from bytecode allow you to deploy your own solidity code.
 import { Test } from "test";
 import { DeployFromBytecodeDtoSpeed, StateMutability, TypeT } from "test/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.deployFromBytecode({
@@ -166,7 +170,9 @@ import { DeployFromBytecodeDtoSpeed, StateMutability, TypeT } from "test/dist/sd
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -196,9 +202,9 @@ Deploy from starton audited template.
 import { Test } from "test";
 import { DeployFromTemplateDtoSpeed } from "test/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.deployFromTemplate({
@@ -220,7 +226,9 @@ import { DeployFromTemplateDtoSpeed } from "test/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -249,9 +257,9 @@ Return all smart contract
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.getAll({});
@@ -263,7 +271,9 @@ import { Test } from "test";
       res = res.next();
     } while (res);
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -292,9 +302,9 @@ Return the read functions, write functions and events of a smart contract
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.getFunctions({
@@ -305,7 +315,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -334,9 +346,9 @@ Return a smart contract.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.getOne({
@@ -347,7 +359,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -377,9 +391,9 @@ Import a contract already deployed
 import { Test } from "test";
 import { StateMutability, TypeT } from "test/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.importExisting({
@@ -415,7 +429,9 @@ import { StateMutability, TypeT } from "test/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -444,9 +460,9 @@ Read a specific function from a smart contract
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.read({
@@ -466,7 +482,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -495,9 +513,9 @@ Update a smart contract.
 ```typescript
 import { Test } from "test";
 
-(async() => {
+async function run() {
   const sdk = new Test({
-    startonApiKey: "",
+    startonApiKey: "<YOUR_API_KEY_HERE>",
   });
 
   const res = await sdk.smartContractManagement.update({
@@ -511,7 +529,9 @@ import { Test } from "test";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
