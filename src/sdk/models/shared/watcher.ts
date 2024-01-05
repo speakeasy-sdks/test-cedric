@@ -44,7 +44,7 @@ export class Watcher extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "createdAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    createdAt?: Date;
+    createdAt: Date;
 
     @SpeakeasyMetadata({ elemType: WatcherCustomEventAbi })
     @Expose({ name: "customEventAbi" })
@@ -100,7 +100,7 @@ export class Watcher extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "updatedAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    updatedAt?: Date;
+    updatedAt: Date;
 
     @SpeakeasyMetadata()
     @Expose({ name: "webhookUrl" })

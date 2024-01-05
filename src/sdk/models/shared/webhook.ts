@@ -20,7 +20,7 @@ export class Webhook extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "createdAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    createdAt?: Date;
+    createdAt: Date;
 
     @SpeakeasyMetadata()
     @Expose({ name: "headers" })
@@ -51,7 +51,7 @@ export class Webhook extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "updatedAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    updatedAt?: Date;
+    updatedAt: Date;
 
     @SpeakeasyMetadata()
     @Expose({ name: "url" })

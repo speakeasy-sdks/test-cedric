@@ -25,7 +25,7 @@ export class WatcherEvent extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "createdAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    createdAt?: Date;
+    createdAt: Date;
 
     @SpeakeasyMetadata()
     @Expose({ name: "id" })
@@ -55,7 +55,7 @@ export class WatcherEvent extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "updatedAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    updatedAt?: Date;
+    updatedAt: Date;
 
     @SpeakeasyMetadata()
     @Expose({ name: "watcherId" })

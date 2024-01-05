@@ -42,7 +42,7 @@ export class SmartContractTemplate extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "createdAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    createdAt?: Date;
+    createdAt: Date;
 
     @SpeakeasyMetadata()
     @Expose({ name: "description" })
@@ -67,11 +67,11 @@ export class SmartContractTemplate extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "isActivated" })
-    isActivated?: boolean;
+    isActivated: boolean;
 
     @SpeakeasyMetadata()
     @Expose({ name: "isAudited" })
-    isAudited?: boolean;
+    isAudited: boolean;
 
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
@@ -79,7 +79,7 @@ export class SmartContractTemplate extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "order" })
-    order?: number;
+    order: number;
 
     @SpeakeasyMetadata()
     @Expose({ name: "shortDescription" })
@@ -92,5 +92,5 @@ export class SmartContractTemplate extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "updatedAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    updatedAt?: Date;
+    updatedAt: Date;
 }

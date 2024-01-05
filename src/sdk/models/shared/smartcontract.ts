@@ -78,7 +78,7 @@ export class SmartContract extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "createdAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    createdAt?: Date;
+    createdAt: Date;
 
     @SpeakeasyMetadata()
     @Expose({ name: "creationHash" })
@@ -128,5 +128,5 @@ export class SmartContract extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "updatedAt" })
     @Transform(({ value }) => new Date(value), { toClassOnly: true })
-    updatedAt?: Date;
+    updatedAt: Date;
 }
