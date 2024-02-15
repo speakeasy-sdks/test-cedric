@@ -83,7 +83,7 @@ async function run() {
   });
 
   const res = await sdk.monitor.delete({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -172,7 +172,7 @@ async function run() {
   });
 
   const res = await sdk.monitor.getAllEvents({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -219,7 +219,7 @@ async function run() {
   });
 
   const res = await sdk.monitor.getOne({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -262,8 +262,8 @@ async function run() {
   });
 
   const res = await sdk.monitor.getOneEvent({
-    eventId: "string",
-    id: "<ID>",
+    eventId: "<value>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -314,7 +314,7 @@ async function run() {
       paused: true,
       webhookUrl: "",
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {

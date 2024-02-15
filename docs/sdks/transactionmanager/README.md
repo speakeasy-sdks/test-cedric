@@ -127,7 +127,7 @@ async function run() {
 
   const res = await sdk.transactionManager.getAvailableNonces({
     address: "92240 Harris Row",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -170,7 +170,7 @@ async function run() {
   });
 
   const res = await sdk.transactionManager.getOne({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -214,7 +214,7 @@ async function run() {
 
   const res = await sdk.transactionManager.resyncNonce({
     address: "4925 Shanahan Parkways",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {

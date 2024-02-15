@@ -27,7 +27,7 @@ async function run() {
 
   const res = await sdk.data.getBalance({
     address: "164 Runolfsson Via",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -71,8 +71,8 @@ async function run() {
 
   const res = await sdk.data.getErc20Balance({
     address: "81562 Emard Grove",
-    contractAddress: "string",
-    network: "string",
+    contractAddress: "<value>",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -115,7 +115,7 @@ async function run() {
   });
 
   const res = await sdk.data.getGasPrice({
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {

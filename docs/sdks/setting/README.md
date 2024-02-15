@@ -21,7 +21,7 @@ async function run() {
   });
 
   const res = await sdk.transactionManager.setting.get({
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -72,7 +72,7 @@ async function run() {
       unstuckMissingNonce: true,
       unstuckMissingNonceDelay: 300,
     },
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {

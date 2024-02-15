@@ -32,7 +32,7 @@ async function run() {
   });
 
   const res = await sdk.ipfs.delete({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -121,7 +121,7 @@ async function run() {
   });
 
   const res = await sdk.ipfs.getOne({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -204,7 +204,7 @@ async function run() {
   });
 
   const res = await sdk.ipfs.pinExistingFile({
-    cid: "string",
+    cid: "<value>",
     metadata: {},
   });
 
@@ -251,7 +251,7 @@ async function run() {
     updatePinDto: {
       metadata: {},
     },
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -392,7 +392,7 @@ async function run() {
   const res = await sdk.ipfs.uploadJson({
     content: {},
     metadata: {},
-    name: "string",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {

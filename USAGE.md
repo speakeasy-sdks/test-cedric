@@ -9,7 +9,7 @@ async function run() {
 
     const res = await sdk.data.getBalance({
         address: "164 Runolfsson Via",
-        network: "string",
+        network: "<value>",
     });
 
     if (res.statusCode == 200) {

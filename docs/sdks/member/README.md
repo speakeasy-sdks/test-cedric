@@ -21,7 +21,7 @@ async function run() {
   });
 
   const res = await sdk.project.member.delete({
-    userId: "string",
+    userId: "<value>",
   });
 
   if (res.statusCode == 200) {

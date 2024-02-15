@@ -39,17 +39,17 @@ async function run() {
   const res = await sdk.smartContractManagement.call({
     callDto: {
       customGas: {},
-      functionName: "string",
+      functionName: "<value>",
       params: [
         "TestToken",
         "TEST",
         "1000000000000000000000000",
         "0x298e760768c8481780397eE28A127eAd584df4ee",
       ],
-      signerWallet: "string",
+      signerWallet: "<value>",
     },
     address: "842 Lee Forges",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -93,7 +93,7 @@ async function run() {
 
   const res = await sdk.smartContractManagement.delete({
     address: "8653 Vaughn Hills",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -142,28 +142,28 @@ async function run() {
         {
           inputs: {
             components: {},
-            name: "string",
-            type: "string",
+            name: "<value>",
+            type: "<value>",
           },
           outputs: {
             components: {},
-            name: "string",
-            type: "string",
+            name: "<value>",
+            type: "<value>",
           },
           type: TypeT.Event,
         },
       ],
-      bytecode: "string",
+      bytecode: "<value>",
       customGas: {},
-      name: "string",
-      network: "string",
+      name: "<value>",
+      network: "<value>",
       params: [
         "TestToken",
         "TEST",
         "1000000000000000000000000",
         "0x298e760768c8481780397eE28A127eAd584df4ee",
       ],
-      signerWallet: "string",
+      signerWallet: "<value>",
     },
   });
 
@@ -309,7 +309,7 @@ async function run() {
 
   const res = await sdk.smartContractManagement.getFunctions({
     address: "18523 Buford Brook",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -353,7 +353,7 @@ async function run() {
 
   const res = await sdk.smartContractManagement.getOne({
     address: "43504 Penelope Expressway",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -401,13 +401,13 @@ async function run() {
       {
         inputs: {
           components: {},
-          name: "string",
-          type: "string",
+          name: "<value>",
+          type: "<value>",
         },
         outputs: {
           components: {},
-          name: "string",
-          type: "string",
+          name: "<value>",
+          type: "<value>",
         },
         stateMutability: StateMutability.Nonpayable,
         type: TypeT.Constructor,
@@ -468,7 +468,7 @@ async function run() {
 
   const res = await sdk.smartContractManagement.read({
     readDto: {
-      functionName: "string",
+      functionName: "<value>",
       params: [
         "TestToken",
         "TEST",
@@ -477,7 +477,7 @@ async function run() {
       ],
     },
     address: "660 Romaine Highway",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -524,7 +524,7 @@ async function run() {
       metadata: {},
     },
     address: "050 Mellie Well",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {

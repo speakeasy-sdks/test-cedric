@@ -27,7 +27,7 @@ async function run() {
     createRpcDto: {
       url: "http://limp-pastry.org",
     },
-    name: "string",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -70,8 +70,8 @@ async function run() {
   });
 
   const res = await sdk.network.rpc.delete({
-    id: "<ID>",
-    name: "string",
+    id: "<id>",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -114,7 +114,7 @@ async function run() {
   });
 
   const res = await sdk.network.rpc.getAll({
-    name: "string",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -161,8 +161,8 @@ async function run() {
   });
 
   const res = await sdk.network.rpc.getOne({
-    id: "<ID>",
-    name: "string",
+    id: "<id>",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -206,8 +206,8 @@ async function run() {
 
   const res = await sdk.network.rpc.update({
     updateRpcDto: {},
-    id: "<ID>",
-    name: "string",
+    id: "<id>",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {

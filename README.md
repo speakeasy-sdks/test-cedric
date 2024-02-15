@@ -45,7 +45,7 @@ async function run() {
 
     const res = await sdk.data.getBalance({
         address: "164 Runolfsson Via",
-        network: "string",
+        network: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -234,7 +234,7 @@ async function run() {
     try {
         res = await sdk.data.getBalance({
             address: "164 Runolfsson Via",
-            network: "string",
+            network: "<value>",
         });
     } catch (err) {
         if (err instanceof errors.SDKError) {
@@ -277,7 +277,7 @@ async function run() {
 
     const res = await sdk.data.getBalance({
         address: "164 Runolfsson Via",
-        network: "string",
+        network: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -304,7 +304,7 @@ async function run() {
 
     const res = await sdk.data.getBalance({
         address: "164 Runolfsson Via",
-        network: "string",
+        network: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -360,7 +360,7 @@ async function run() {
 
     const res = await sdk.data.getBalance({
         address: "164 Runolfsson Via",
-        network: "string",
+        network: "<value>",
     });
 
     if (res.statusCode == 200) {

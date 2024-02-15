@@ -30,14 +30,14 @@ async function run() {
 
   const res = await sdk.kms.create({
     credentials: {
-      accessKeyId: "string",
-      accountId: "string",
-      region: "string",
+      accessKeyId: "<value>",
+      accountId: "<value>",
+      region: "<value>",
     },
     metadata: {},
-    name: "string",
+    name: "<value>",
     provider: Provider.Aws,
-    secret: "string",
+    secret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -80,7 +80,7 @@ async function run() {
   });
 
   const res = await sdk.kms.delete({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -168,7 +168,7 @@ async function run() {
   });
 
   const res = await sdk.kms.getOne({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -211,8 +211,8 @@ async function run() {
   });
 
   const res = await sdk.kms.update({
-    requestBody: "string",
-    id: "<ID>",
+    requestBody: "<value>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {

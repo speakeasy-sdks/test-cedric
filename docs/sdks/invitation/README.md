@@ -67,7 +67,7 @@ async function run() {
   });
 
   const res = await sdk.project.member.invitation.delete({
-    id: "<ID>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {

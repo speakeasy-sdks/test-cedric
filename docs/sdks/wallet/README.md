@@ -32,7 +32,7 @@ async function run() {
   });
 
   const res = await sdk.wallet.create({
-    kmsId: "string",
+    kmsId: "<value>",
     metadata: {},
   });
 
@@ -256,7 +256,7 @@ async function run() {
       captchaToken: "testCaptchaToken",
       wallet: "0x298e760768c8481780397eE28A127eAd584df4ee",
     },
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -300,7 +300,7 @@ async function run() {
 
   const res = await sdk.wallet.resyncNonce({
     address: "4925 Shanahan Parkways",
-    network: "string",
+    network: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -344,7 +344,7 @@ async function run() {
 
   const res = await sdk.wallet.sign({
     signMessageDto: {
-      message: "string",
+      message: "<value>",
     },
     address: "924 Makenzie Curve",
   });
