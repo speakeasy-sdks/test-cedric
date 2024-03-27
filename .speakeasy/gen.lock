@@ -3,21 +3,21 @@ id: e10fe540-2a78-4461-9235-87a4d61f8d71
 management:
   docChecksum: 4a0eda713ee112d26304b4b3c03efb42
   docVersion: "1.0"
-  speakeasyVersion: 1.207.1
-  generationVersion: 2.280.6
-  releaseVersion: 0.4.4
-  configChecksum: e17f5e86405c8dfd2d1dc2d2a75c7274
+  speakeasyVersion: 1.227.0
+  generationVersion: 2.291.0
+  releaseVersion: 0.4.5
+  configChecksum: f4fcf8cc9979746ef2bce2b6294e96e2
   repoURL: https://github.com/speakeasy-sdks/test-cedric.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-cedric
 features:
   typescript:
     core: 3.4.8
-    globalSecurity: 2.82.4
+    globalSecurity: 2.82.5
     globalServerURLs: 2.82.2
     groups: 2.81.2
     nameOverrides: 2.81.1
-    pagination: 2.82.0
+    pagination: 2.82.1
 generatedFiles:
   - src/sdk/data.ts
   - src/sdk/wallet.ts
